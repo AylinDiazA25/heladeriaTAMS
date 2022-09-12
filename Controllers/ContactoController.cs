@@ -32,7 +32,7 @@ namespace heladeriaTAMS.Controllers
         {
             _context.Add(objContacto);
             _context.SaveChanges();
-                    return View("Index");
+            return View("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -40,6 +40,5 @@ namespace heladeriaTAMS.Controllers
         {
             return View("Error!");
         }
-       
-  }
+    }
 }
